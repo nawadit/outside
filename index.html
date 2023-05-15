@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Outside</title>
+    <link rel="icon" href="./Images/roundIcon.png" type="image/x-icon">
+    <!-- adding icon to title bar  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Source+Sans+Pro:wght@200;400;700&display=swap"
+        rel="stylesheet">
+    <!-- adding google fonts  -->
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- linking css file  -->
+
+</head>
+
+<body>
+    <div class="divs" id="landingDiv">
+        <input type="text" name="cityName" id="searchBar">
+        <button class="button_first" id="buttonOne" onclick="searched()">
+            <span class="button_second"> Search
+            </span>
+        </button>
+    </div>
+
+    <div class="divs" id="resultDiv">
+        <p id="cityName">Dummy City Name </p>
+          <div class="" id="details">
+              <p id="temperature">Dummy Temperature</p>
+              <p id="feelsLike"> Dummy Feels like </p>
+              <p id="humidity">Dummy Humidity</p>
+          </div>
+          <button class="button_first" id="buttonTwo" onclick="backToLanding()">
+            <span class="button_second" > Return
+            </span>
+          </button>
+    </div>
+
+    <script src="Script/script.js"></script>
+    <!-- linking script file  -->
+</body>
+
+</html>

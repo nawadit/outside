@@ -1,0 +1,118 @@
+
+body{
+    background-image: url('../Images/backgroundImage.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  margin: 0px;
+  
+}
+
+#landingDiv{
+   display: flex;
+}
+
+.divs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: antiquewhite;
+  height: 50vh;
+  width: 50vw;
+}
+
+#searchBar{
+    display: flex;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#buttonOne{
+  display: block;
+}
+
+.button_first {
+    display: block;
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: rgb(238, 214, 179);
+    --button_outline_color: rgb(243, 193, 127);
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+  }
+  
+  .button_second{
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: black;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  .button_first:hover .button_second {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  .button_first:active .button_second {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+
+  #showingData{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px dotted black;
+  }
+  #cityName{
+    display: block;
+    font-size: 40px;
+    font-family: 'Oleo Script', cursive;
+  }
+  #details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: inherit;
+    width: 90%;
+  }
+  #temperature, #feelsLike, #humidity{
+    width: fit-content;
+  }
+  
+  #buttonTwo{
+    display: block;
+  }
+
+  #resultDiv{
+    display: none;
+    height: fit-content;
+    padding: 20px 20px;
+  }
+
+  .errorMessage{
+    display: none;
+    font-size: large;
+    font-family: inherit;
+    font-weight: bold;
+  }
